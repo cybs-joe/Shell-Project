@@ -11,6 +11,6 @@ int main() {
   cout << "$ ";
   string text;
   getline(cin , text);
-  cout << text << " : command not found";
+  cout << text << ": command not found";
 
 }
