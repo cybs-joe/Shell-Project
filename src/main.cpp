@@ -13,15 +13,17 @@ int main() {
  
   while (status && text != "Exit" && text != "exit")
   {
+    cout << "$ ";
+    getline(cin , text);
     if (text.find("echo ")==0){
       cout << text.substr(5) << endl;
     }
-     cout << "$ ";
-    getline(cin , text);
    if (text == "exit" || text =="Exit" || text == "EXIT"){
     break;
    }
+   else{
   cout << text << ": command not found" << endl;
   }
+}
   
 }
