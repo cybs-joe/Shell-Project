@@ -18,7 +18,7 @@ int main() {
     if (text.find("echo ")==0){
       cout << text.substr(5) << endl;
     }
-   if (text == "exit" || text =="Exit" || text == "EXIT"){
+   else if (text == "exit" || text =="Exit" || text == "EXIT"){
     break;
    }
    else{
