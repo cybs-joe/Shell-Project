@@ -10,18 +10,16 @@ int main() {
   cerr << unitbuf;
 
   // TODO: Uncomment the code below to pass the first stage
-  
+ 
   while (status && text != "Exit" && text != "exit")
   {
-    if (text.substr(0,5) == "echo "){
+    if (text.find("echo ")==0){
       cout << text.substr(5) << endl;
     }
-    else{
-  cout << "$ ";
-  getline(cin , text);
+     cout << "$ ";
+    getline(cin , text);
    if (text == "exit" || text =="Exit" || text == "EXIT"){
     break;
-   }
    }
   cout << text << ": command not found" << endl;
   }
