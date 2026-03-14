@@ -10,13 +10,15 @@ int main() {
   cerr << unitbuf;
 
   // TODO: Uncomment the code below to pass the first stage
- 
-  while (status = true)
+  
+  while (status && text != "Exit" && text != "exit")
   {
   cout << "$ ";
   getline(cin , text);
+   if (text == "exit" || text =="Exit" || text == "EXIT"){
+    break;
+   }
   cout << text << ": command not found" << endl;
-
   }
   
 }
