@@ -21,6 +21,9 @@ int main() {
    else if (text == "exit" || text =="Exit" || text == "EXIT"){
     break;
    }
+   if (text == "echo" || text =="exit"|| text =="type"){
+    cout << text << " is a shell builtin" << endl;
+   }
    else{
   cout << text << ": command not found" << endl;
   }
