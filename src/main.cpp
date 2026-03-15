@@ -18,15 +18,18 @@ int main() {
     if (text.find("echo ")==0){
       cout << text.substr(5) << endl;
     }
-   else if (text == "exit" || text =="Exit" || text == "EXIT"){
+    
+    else if (text == "exit" || text =="Exit" || text == "EXIT"){
     break;
    }
-   if (text == "type echo" || text =="type exit"|| text =="type type"){
+   else if (text == "type echo" || text =="type exit"|| text =="type type"){
     cout <<text.substr(5,8) << " is a shell builtin" << endl;
    }
+   else if(text.find("type ")==0){
+    cout << text.substr(5) <<": not found" << endl;
+   }
    else{
-  cout << text << ": command not found" << endl;
+    cout << text << ": command not found" << endl;
+   }
   }
-}
-  
 }
