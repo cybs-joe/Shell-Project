@@ -22,7 +22,7 @@ int main() {
     break;
    }
    if (text == "type echo" || text =="type exit"|| text =="type type"){
-    cout <<text.substr(5,8) << "is a shell builtin" << endl;
+    cout <<text.substr(5,8) << " is a shell builtin" << endl;
    }
    else{
   cout << text << ": command not found" << endl;
