@@ -42,7 +42,7 @@ int main() {
       if ( fs::exists(fullPath))
       {
         found = true;
-        cout << text.substr(5) << " is " << fullPath <<endl;
+        cout << text.substr(5) << " is " << fullPath.string() <<endl;
         break;
       }
       
