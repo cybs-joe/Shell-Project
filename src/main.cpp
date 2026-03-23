@@ -41,9 +41,11 @@ int main() {
       fs::path fullPath = fs:: path (dir) / text.substr(5);
       if ( fs::exists(fullPath))
       {
-        found = true;
         cout << text.substr(5) << " is " << fullPath.string() <<endl;
-        break;
+      }
+      if ((fs::status(fullPath).permissions() & fs::perms::owner_exec) != fs::perms::none){
+         found = true;
+          break;
       }
       
      }
