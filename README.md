@@ -1,34 +1,19 @@
-[![progress-banner](https://backend.codecrafters.io/progress/shell/471d2e64-fe86-4e34-88ac-314a6638042c)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+# Shell Project
 
-This is a starting point for C++ solutions to the
-["Build Your Own Shell" Challenge](https://app.codecrafters.io/courses/shell/overview).
+A custom POSIX-compliant shell built in C++ from scratch.
 
-In this challenge, you'll build your own POSIX compliant shell that's capable of
-interpreting shell commands, running external programs and builtin commands like
-cd, pwd, echo and more. Along the way, you'll learn about shell command parsing,
-REPLs, builtin commands, and more.
+## What's implemented
+- REPL loop
+- `echo`, `exit`, `type`, `cd` builtins
+- External command execution with argument passing
+- PATH traversal
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
-
-# Passing the first stage
-
-The entry point for your `shell` implementation is in `src/main.cpp`. Study and
-uncomment the relevant code, then run the command below to execute the tests on
-our servers:
-
-```sh
-codecrafters submit
-```
-
+## Roadmap
+- [ ] Navigation — `pwd`, `cd` absolute/relative/home
+- [ ] Quoting — single quotes, double quotes, backslash handling
+- [ ] Redirection — stdout/stderr redirect and append
+- [ ] Command completion — builtin, executable, partial
+- [ ] Filename completion — file, directory, nested
+- [ ] Pipelines — dual, multi-command, with builtins
+- [ ] History — navigation, up/down arrow, limiting entries
 Time to move on to the next stage!
-
-# Stage 2 & beyond
-
-Note: This section is for stages 2 and beyond.
-
-1. Ensure you have `cmake` installed locally
-1. Run `./your_program.sh` to run your program, which is implemented in
-   `src/main.cpp`.
-1. Run `codecrafters submit` to submit your solution to CodeCrafters. Test
-   output will be streamed to your terminal.
