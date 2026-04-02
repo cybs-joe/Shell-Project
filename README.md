@@ -16,4 +16,4 @@ A custom POSIX-compliant shell built in C++ from scratch.
 - [ ] Filename completion — file, directory, nested
 - [ ] Pipelines — dual, multi-command, with builtins
 - [ ] History — navigation, up/down arrow, limiting entries
-Time to move on to the next stage!
+
